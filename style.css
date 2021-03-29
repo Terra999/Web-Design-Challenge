@@ -15,3 +15,26 @@ h2 {
 body {
   background: #f1f1f1;
 }
+img{border:solid 3px rgba(36, 131, 134, 0.377); margin:10px;}
+.selected{
+   box-shadow:0px 12px 22px 1px #333;
+}
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+@media (max-width: 480px) {
+  .navbar li {
+    padding: 10px;
+  }
+
+  .post {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .navbar ul {
+    visibility: hidden;
+  }
+
+  #nav-select {
+    visibility: visible;
+  }
+}
